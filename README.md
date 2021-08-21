@@ -4,19 +4,18 @@ Node.js client for Amazon's [Firecracker](http://firecracker-microvm.io) MicroVM
 
 ## Installation
 
-`npm install firecrackerode`
+`npm install @flowtr/firecrackerode`
 
 ## Usage
 
- * Check [Fireracker API documentation](https://github.com/firecracker-microvm/firecracker/blob/master/src/api_server/swagger/firecracker.yaml) for more details.
- 
+* Check [Fireracker API documentation](https://github.com/firecracker-microvm/firecracker/blob/master/src/api_server/swagger/firecracker.yaml) for more details.
 
 ### Getting started
 
 To use `firecrackerode` first you need to instantiate it:
 
 ``` js
-var Firecracker = require('firecrackerode');
+var Firecracker = require('@flowtr/firecrackerode');
 var firecracker = new Firecracker({socketPath: '/tmp/firecracker.socket'});
 ```
 
@@ -68,8 +67,8 @@ firecracker.kill()
 
 ## Tests
 
- * You need a KVM host.
- * Tests are implemented using `mocha` and `chai`. Run them with `npm test`.
+* You need a KVM host.
+* Tests are implemented using `mocha` and `chai`. Run them with `npm test`.
 
 ## Examples
 
@@ -77,10 +76,8 @@ Check the examples folder for more specific use cases examples.
 
 ## License
 
-Pedro Dias - [@pedromdias](https://twitter.com/pedromdias)
-
 Licensed under the Apache license, version 2.0 (the "license"); You may not use this file except in compliance with the license. You may obtain a copy of the license at:
 
-    http://www.apache.org/licenses/LICENSE-2.0.html
+`http://www.apache.org/licenses/LICENSE-2.0.html`
 
 Unless required by applicable law or agreed to in writing, software distributed under the license is distributed on an "as is" basis, without warranties or conditions of any kind, either express or implied. See the license for the specific language governing permissions and limitations under the license.
