@@ -1,0 +1,32 @@
+{
+  "name": "@flwotr/firecrackerode",
+  "description": "Firecracker API module.",
+  "version": "1.0.2",
+  "author": "Theo Paris <theoparisdesigns@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/flowtr/firecrackerode.git"
+  },
+  "keywords": [
+    "firecracker"
+  ],
+  "devDependencies": {
+    "@theoparis/eslint-config": "github:creepinson/eslint-config#update",
+    "@types/node": "^16.7.1",
+    "chai": "~4.3.4",
+    "mocha": "^9.1.0",
+    "typescript": "^4.3.5"
+  },
+  "main": "./lib/firecracker",
+  "types": "./dist/firecracker.d.ts",
+  "scripts": {
+    "test": "mocha -R spec --timeout 10000",
+    "build": "tsc",
+    "lint": "eslint lib/**/*.js --fix",
+    "prepublishOnly": "npm run lint -- --no-fix && npm run build"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 14.0"
+  }
+}
